@@ -114,7 +114,7 @@ In order to use a local Lagoon to deploy itself on an OpenShift, we need a subse
       4. Trigger a deployment of the `lagoon` sitegroup that you edited further, which will cause your local lagoon to connect to the defined OpenShift and trigger a new deployment
       5. Show the logs of all Local Lagoon Services
 
-3. As soon as you see messages like `Build lagoon-1 running` in the logs it's time to connect to your OpenShift and check the build. The URL you will use for that depends on your system, but it's most probably the same as in `openshift.console`. Then you should see a new OpenShift Project called `[lagoon] develop` and in there a `Build` that is running. On a local OpenShift you can find that under https://192.168.99.100:8443/console/project/lagoon-develop/browse/builds/lagoon?tab=history. If you see the Build running check the logs and see how the deployment system does it's magic! This is your very first Lagoon deployment running! 🎉 Congrats!
+3. As soon as you see messages like `Build lagoon-1 running` in the logs it's time to connect to your OpenShift and check the build. The URL you will use depends on your system, but it's most probably the same as in `openshift.console`. Then you should see a new OpenShift Project called `[lagoon] develop` and in there a `Build` that is running. On a local OpenShift you can find that under https://192.168.99.100:8443/console/project/lagoon-develop/browse/builds/lagoon?tab=history. If you see the Build running check the logs and see how the deployment system does it's magic! This is your very first Lagoon deployment running! 🎉 Congrats!
 
     Short background on what is actually happening here:
 
